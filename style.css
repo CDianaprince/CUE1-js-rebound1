@@ -22,7 +22,7 @@
 .div_form__div1__h1 {
   padding: 3%;
   text-align: center;
-  background: -webkit-linear-gradient(deeppink, purple, orange);
+  background: linear-gradient(deeppink, purple, orange);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
