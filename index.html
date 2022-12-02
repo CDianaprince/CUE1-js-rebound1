@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Mea+Culpa&family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@200&family=Quicksand:wght@500;700&family=Recursive:wght@300&family=Roboto:wght@500;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="div_form">
+        <div class="div_form__div1">
+          <h1 class="div_form__div1__h1">INSCRIBETE</h1>
+        </div>
+
+        <div class="form1" action="informacion">
+          <div class="form">
+            <div class="form__label">
+              <label class="form__label__label form__labelh" for="nombre"
+                >Nombre</label
+              >
+
+              <input
+                class="form__label__input"
+                type="text"
+                name="nombre"
+                placeholder="Julia Sofia"
+                required
+              />
+            </div>
+
+            <div class="form__label">
+              <label class="form__label__label1 form__labelh" for="correo"
+                >Correo</label
+              >
+
+              <input
+                class="form__label__input"
+                type="email"
+                name="correo"
+                placeholder="Lopez_Ramirez@hjy.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form">
+            <div class="form__label">
+              <label class="form__label__label2 form__labelh" for="trabajo"
+                >Trabajo</label
+              >
+
+              <input
+                class="form__label__input form__label__input--fecha"
+                type="tex"
+                name="trabajo"
+                placeholder="Front End Dev"
+                required
+              />
+            </div>
+
+            <div class="form__label">
+              <label class="form__label__label3 form__labelh" for="Telefono"
+                >Telefono</label
+              >
+
+              <input class="form__label__input" type="tex" name="Telefono"
+              placeholder="3333-546" required=>
+            </div>
+          </div>
+
+          <div class="form__label form__label--info form__labelh">
+
+            <label class="form__label__info--label" for="sobre ti"
+              >Sobre ti</label
+            >
+
+            <input class="form__label__input" type="tex" name="sobre ti"
+            placeholder="Js y programacion orientada a objetos son lo mejor"
+            required=>
+          </div>
+
+          <div class="form__label">
+            <input
+              class="form__label__input--button"
+              type="submit"
+              name="Enviar"
+            />
+          </div>
+        </div>
+        <!--fin formulario-->
+      </div>
+    </main>
+  </body>
+</html>

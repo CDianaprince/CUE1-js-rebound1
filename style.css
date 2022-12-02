@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+}
+
+.main {
+  margin: 1 10%;
+  width: 100%;
+}
+
+.div_form {
+  margin: 20%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  padding-bottom: 15%;
+  background-color: rgb(234, 230, 230);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.div_form__div1__h1 {
+  padding: 3%;
+  text-align: center;
+  background: -webkit-linear-gradient(deeppink, purple, orange);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.form1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  gap: 20%;
+  justify-content: center;
+  padding-right: 5%;
+  position: relative;
+}
+.form__label {
+  padding: 2%;
+}
+.form__label__label {
+  color: blue;
+  padding: 2%;
+  position: absolute;
+  bottom: 25%;
+  left: 15%;
+  width: 25%;
+  pointer-events: none;
+  border-bottom: 1px solid rgb(47, 47, 182);
+}
+.form__label__label1 {
+  color: blue;
+  padding: 2%;
+  position: absolute;
+  width: 25%;
+  bottom: 25%;
+  left: 55%;
+  pointer-events: none;
+  border-bottom: 1px solid rgb(47, 47, 182);
+}
+.form__label__label2 {
+  color: blue;
+  padding: 2%;
+  position: absolute;
+  width: 25%;
+  bottom: 25%;
+  left: 15%;
+  pointer-events: none;
+  border-bottom: 1px solid rgb(47, 47, 182);
+}
+.form__label__label3 {
+  color: blue;
+  padding: 2%;
+  position: absolute;
+  width: 25%;
+  bottom: 25%;
+  left: 55%;
+  pointer-events: none;
+  border-bottom: 1px solid rgb(47, 47, 182);
+}
+.form__label__info--label {
+  color: blue;
+  padding: 2%;
+  position: absolute;
+  width: 25%;
+  bottom: 26%;
+  left: 25%;
+  pointer-events: none;
+  border-bottom: 1px solid rgb(47, 47, 182);
+}
+.form__label__input {
+  border: none;
+  margin-top: 15%;
+  background: none;
+  outline: 0px;
+  width: 100%;
+}
+.form__label__input--button {
+  padding: 0.5%;
+  width: 30%;
+  margin-left: 7%;
+  text-align: center;
+  border: none;
+  color: white;
+  background: -webkit-linear-gradient(deeppink, purple, orange);
+  -webkit-background-clip: content-box padding-box;
+  background-clip: content-box padding-box;
+}
+
+.form__label--info {
+  margin-left: 7%;
+}
+
+/*# sourceMappingURL=style.css.map */
