@@ -22,7 +22,7 @@
 .div_form__div1__h1 {
   padding: 3%;
   text-align: center;
-  background: linear-gradient(deeppink, purple, orange);
+  background: linear-gradient(to right, deeppink, purple, orange);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -102,19 +102,25 @@
   width: 100%;
 }
 .form__label__input--button {
-  padding: 0.5%;
-  width: 30%;
+  padding: 2%;
+  width: 25%;
   margin-left: 7%;
   text-align: center;
   border: none;
   color: white;
-  background: -webkit-linear-gradient(deeppink, purple, orange);
+  background: linear-gradient(to right, deeppink, purple, rgb(203, 80, 10));
   -webkit-background-clip: content-box padding-box;
   background-clip: content-box padding-box;
 }
 
 .form__label--info {
   margin-left: 7%;
+}
+
+@media screen and (min-widht: 768px) {
+  .form__labelh {
+    height: 2%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

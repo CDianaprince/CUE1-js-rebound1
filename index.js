@@ -4,11 +4,11 @@ const nombre = document.getElementById("nombre");
 
 const correo = document.getElementById("email");
 
-const form = document.querySelector5(".form1");
+const form = document.querySelector(".form1");
 
 //Crear event listener para la forma
 
-form.addEventListener('enviar', (e) => {
+form.addEventListener('submit', (e) => {
   //Evitar la accion por defecto
   e.preventDefault();
 
