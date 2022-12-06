@@ -10,10 +10,12 @@
   10%;
   width: 100%;
   
+  
 }
 
 
 .div_form{
+ 
   margin:20%;
   margin-top: 10%;
   margin-bottom: 5%;
@@ -122,7 +124,7 @@
     &__input{
       border: none;
       margin-top: 15%;
-      background:none;
+      background:rgb(234, 230, 230);
       outline: 0px;
       width: 100%;
     }
@@ -146,26 +148,47 @@
 
 }
 
-
-
 .form__label--info{
 
   margin-left: 7%;
   
 }
+.contenedor{
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}
 
-@mixin mv( $medida : 480px) {
-  @media screen and (min-widht: $medida ) {
+.tex{
+  background: linear-gradient(to right,deeppink,purple,rgb(203, 80, 10));
+  -webkit-background-clip:content-box padding-box;
+  background-clip: content-box padding-box;
+  
+  line-height: 100%;
+ 
+
+  
+
+}
+
+.div-backg{
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+
+  &__div{
+    display: flex;
+    padding: 5%;
+    gap: 2%;
     
-    @content;
   }
-  
 }
 
-.form__labelh{
-  
-  @include mv(768px){height: 2%;}
-}
+
+
+
+
+
 
 
 

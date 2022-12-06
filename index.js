@@ -1,30 +1,84 @@
-//Obtener informacion de la forma
 
-const nombre = document.getElementById("nombre");
+const nombre = document.getElementById('fnombre');/*.value;
+console.log(nombre);*/
 
-const correo = document.getElementById("email");
+const telefono = document.getElementById('telefono');/*.value;
+console.log(lname);*/
 
-const form = document.querySelector(".form1");
+const work = document.getElementById('trabajo');/*.value;
+console.log(correo);*/
 
-//Crear event listener para la forma
+const correo = document.getElementById('correo');
+
+const descripcion = document.getElementById('info');
+
+const form = document.getElementById('form1');/*.value;
+console.log(form);*/
+
+const contenedor = document.getElementById('contenedor');
+
+
+
+
 
 form.addEventListener('submit', (e) => {
-  //Evitar la accion por defecto
-  e.preventDefault();
 
-  //Crear un objeto que tenga los valores de la forma
+    e.preventDefault();
 
-  const formulario = {
+   const formulario = { 
 
-    name: nombre.value,
-    email: correo.value,
+      name: nombre.value,
+      phone: telefono.value,
+      trabajo: work.value,
+      email: correo.value,
+      Informacion: descripcion.value, 
+   }
 
-  }
+   const { name, phone, trabajo, email, Informacion } = formulario
 
-  console.log(formulario);
+   console.log(formulario);
 
-  //Dar la orden de submit 
-  // event.submit();
+   /////////////////////////////////
+
+   const cuadroHtmlconInfo = crearCuadroDeForma(name, phone, trabajo, email,Informacion)
+
+
+   contenedor.insertAdjacentHTML('beforeend', cuadroHtmlconInfo);
+
 
 });
+
+function crearCuadroDeForma(name, phone, trabajo, email, Informacion) {
+  const cuadroHtml = 
+  `
+  <div class="contenedor">
+
+    <div class="tex">
+      <h4>Name</h4>
+      <p> ${name}</p>
+      
+      <p>${trabajo}</p>
+    </div>
+    <div class="div-backg">
+      <span> <h3>Informacion</h3></span>
+      <div class="div-backg__div">
+        <h4>Phone</h4><br>
+        <p>${phone}</p>
+        <h4>Email</h4><br>
+        <p>${email}</p>
+      </div>
+      <h4>Sobre ti</h4>
+      <p>${Informacion}</p>
+    </div>
+    
+  </div>
+  `;
+   
+  
+  return cuadroHtml;
+  
+}
+
+const footer = document.getElementById('footer');
+
 
