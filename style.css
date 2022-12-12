@@ -117,10 +117,16 @@
   margin-left: 7%;
 }
 
-.contenedor {
+#contenedor {
   display: flex;
   justify-content: center;
-  padding: 5%;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+}
+
+.div_form {
+  margin-bottom: 0%;
 }
 
 .tex {
@@ -128,12 +134,19 @@
   -webkit-background-clip: content-box padding-box;
   background-clip: content-box padding-box;
   line-height: 100%;
+  margin-bottom: 10%;
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .div-backg {
   display: flex;
   flex-direction: column;
   padding: 5%;
+  margin-bottom: 10%;
 }
 .div-backg__div {
   display: flex;

@@ -51,9 +51,11 @@ form.addEventListener('submit', (e) => {
 function crearCuadroDeForma(name, phone, trabajo, email, Informacion) {
   const cuadroHtml = 
   `
-  <div class="contenedor">
-
+  
+    
+  <div id="contenedor" class="contenedor">
     <div class="tex">
+      
       <h4>Name</h4>
       <p> ${name}</p>
       
@@ -70,8 +72,9 @@ function crearCuadroDeForma(name, phone, trabajo, email, Informacion) {
       <h4>Sobre ti</h4>
       <p>${Informacion}</p>
     </div>
-    
   </div>
+      
+  
   `;
    
   

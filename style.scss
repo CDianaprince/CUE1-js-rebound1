@@ -153,11 +153,19 @@
   margin-left: 7%;
   
 }
-.contenedor{
+
+#contenedor{
   display: flex;
   justify-content: center;
-  padding: 5%;
+  position: absolute;
+  top: 80%;
+  left: 50%;
 }
+
+.div_form{
+  margin-bottom: 0%;
+}
+
 
 .tex{
   background: linear-gradient(to right,deeppink,purple,rgb(203, 80, 10));
@@ -165,6 +173,13 @@
   background-clip: content-box padding-box;
   
   line-height: 100%;
+  margin-bottom: 10%;
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
  
 
   
@@ -175,6 +190,7 @@
   display: flex;
   flex-direction: column;
   padding: 5%;
+  margin-bottom: 10%;
 
   &__div{
     display: flex;
